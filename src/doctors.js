@@ -1,6 +1,7 @@
 export class Doctor {
-  constructor(name,symptom,location,page = 10 ) {
+  constructor(search,name,symptom,location,page = 10 ) {
     this.name = name;
+    this.search = search;
     this.symptom = symptom;
     this.location = location;
     this.page = page;

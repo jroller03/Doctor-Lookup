@@ -9,3 +9,37 @@
   color: red;
   font-size: 50px;
 }
+
+.search-box {
+    position: relative;
+}
+.search-box .glyphicon {
+    position: absolute;
+    padding: 100px;
+    pointer-events: none;
+    left: 150px;
+    top: 0px;
+}
+.search-box .glyphicon:before {
+    color: white;
+    transition: all 0.2s linear;
+}
+.search-box input {
+    color: #fff;
+    padding-left: 100px;
+    background: #546e7a;
+    border:0;
+    outline: none !important;
+    transition: all 0.2s linear;
+}
+.search-box input:focus {
+    background: #fff !important;
+    outline: 0;
+    color: #333;
+}
+.search-box input:focus + .glyphicon:before {
+    color: #333;
+}
+.search-box input:hover {
+    background: #78909c;
+}

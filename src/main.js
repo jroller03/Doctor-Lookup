@@ -19,27 +19,27 @@ $(document).ready(function() {
 
         for(let i=0; i<response.data.length; i++) {
             $("#results").append("<h1><b>Doctor's Information</b></h1>");
-            // displaying the profile
-            $("#results").append("<img src=" + JSON.stringify(response.data[i].profile.image_url ) + ">")
-            $("#results").append("<li><b>Name:</b> " + JSON.stringify(response.data[i].profile.first_name).replace(/"/g,"") + " " + JSON.stringify(response.data[i].profile.last_name).replace(/"/g,"") + "</li>")
-            $("#results").append("<li><b>Bio:</b> " + JSON.stringify(response.data[i].profile.bio) + "</li>")
-            // displaying practices
-            if(response.data[i].practices.length != 0)  {
-              $("#results").append("<li><b>Employeer:</b> " +   JSON.stringify(response.data[i].practices[0].name).replace(/"/g,"") + "</li>");
-              if( typeof(JSON.stringify(response.data[i].practices[0].website) ) != 'undefined') {
-                $("#results").append("<li><b>Website:</b> <a href=" +   JSON.stringify(response.data[i].practices[0].website)+ "/a>" + JSON.stringify(response.data[i].practices[0].website).replace(/"/,"") + "</li>");
-              }
-              $("#results").append("<li><b>Description:</b> " +   JSON.stringify(response.data[i].practices[0].description)+ "</li>");
-              $("#results").append("<li><b>Accept New Pattients:</b> " +   JSON.stringify(response.data[i].practices[0].accepts_new_patients)+ "</li>");
+          
+            $("#results").append("<img src=" (response.data[i].profile.image_url ) + ">")
+            $("#results").append("<li><b>Name:</b> " (response.data[i].profile.first_name).replace(/"/g,"") + " " (response.data[i].profile.last_name).replace(/"/g,"") + "</li>")
+            $("#results").append("<li><b>Bio:</b> " (response.data[i].profile.bio) + "</li>")
 
-              $("#results").append("<li><b>Address:</b> " +   JSON.stringify(response.data[i].practices[0].visit_address.street ) + " , " + JSON.stringify(response.data[i].practices[0].visit_address.street2 )  + "</li>");
-              $("#results").append("<li><b>City:</b> "  + JSON.stringify(response.data[i].practices[0].visit_address.city ).replace(/"/g,"")   + "</li>");
-              $("#results").append("<li><b>State:</b> "  + JSON.stringify(response.data[i].practices[0].visit_address.state_long ).replace(/"/g,"")   + "</li>");
-              $("#results").append("<li><b>City:</b> "  + JSON.stringify(response.data[i].practices[0].visit_address.city ).replace(/"/g,"")   + "</li>");
-              $("#results").append("<li><b>Zip: </b>"  + JSON.stringify(response.data[i].practices[0].visit_address.zip ).replace(/"/g,"")   + "</li>");
+            if(response.data[i].practices.length != 0)  {
+              $("#results").append("<li><b>Employeer:</b> " + (response.data[i].practices[0].name).replace(/"/g,"") + "</li>");
+              if( typeo(response.data[i].practices[0].website) ) != 'undefined') {
+                $("#results").append("<li><b>Website:</b> <a href=" + (response.data[i].practices[0].website)+ "/a>" (response.data[i].practices[0].website).replace(/"/,"") + "</li>");
+              }
+              $("#results").append("<li><b>Description:</b> " + (response.data[i].practices[0].description)+ "</li>");
+              $("#results").append("<li><b>Accept New Pattients:</b> " + (response.data[i].practices[0].accepts_new_patients)+ "</li>");
+
+              $("#results").append("<li><b>Address:</b> " + (response.data[i].practices[0].visit_address.street ) + " , " (response.data[i].practices[0].visit_address.street2 )  + "</li>");
+              $("#results").append("<li><b>City:</b> "  (response.data[i].practices[0].visit_address.city ).replace(/"/g,"")   + "</li>");
+              $("#results").append("<li><b>State:</b> "  (response.data[i].practices[0].visit_address.state_long ).replace(/"/g,"")   + "</li>");
+              $("#results").append("<li><b>City:</b> "  (response.data[i].practices[0].visit_address.city ).replace(/"/g,"")   + "</li>");
+              $("#results").append("<li><b>Zip: </b>"  (response.data[i].practices[0].visit_address.zip ).replace(/"/g,"")   + "</li>");
 
               if( response.data[i].practices[0].phones.length != 0) {
-                $("#results").append("<li><b>Phone:</b> "  + JSON.stringify(response.data[i].practices[0].phones ).toString().replace(/"/g,"").replace(/{/g,"").replace(/,/g,"\n").replace(/}/g,"").replace(/\[/g,"").replace(/\]/g,"").replace("type:landline",",").replace("number:","").replace("type:fax","")    + "</li>");
+                $("#results").append("<li><b>Phone:</b> "  (response.data[i].practices[0].phones ).toString().replace(/"/g,"").replace(/{/g,"").replace(/,/g,"\n").replace(/}/g,"").replace(/\[/g,"").replace(/\]/g,"").replace("type:landline",",").replace("number:","").replace("type:fax","")    + "</li>");
               }
 
             }

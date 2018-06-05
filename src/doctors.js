@@ -8,7 +8,7 @@ export class Doctor {
 
   search(getElements) {
     let xml = new XMLHttpRequest();
-    let url = `https://api.betterdoctor.com/2016-03-01/doctors?name=${this.name}&query=${this.symptom}&location=${this.location}&limit=${this.page}&user_key=c09b8985b601ceefd94ee8963a48f646`;
+    let url = `https://api.betterdoctor.com/2016-03-01/doctors?name=${this.name}&query=${this.symptom}&location=${this.location}&limit=${this.page}&user_key=41af377084ce2bce31e20bf9e7fd6da1`;
     xml.onreadystatechange = function() {
       if(this.readyState === 4 && this.status === 200) {
         let response = JSON.parse(this.responseText);

@@ -1,6 +1,6 @@
 ### _DoctorLookup#_
 ### Version 1.0
-#### By:
+#### By: Justin Roller
 #### Date: Sunday June 3, 2018
 
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="https://cdn3.vectorstock.com/i/1000x1000/93/77/doctor-icon-medical-consultation-male-physician-vector-18769377.jpg">
+    <meta charset="utf-8">
+    <title>Doctor Lookup</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Doctor Lookup</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-md-0 search" action="/search" name="search">
+          <input class="form-control" type="text" placeholder="Search" name="searchdate" >
+        </form>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form class="search" >
+            <div class="form-group">
+              <label for="name">Please Enter Doctor's Name:</label>
+              <input type="text" placeholder="optional" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="symptom">Please Enter Your Symptom:</label>
+              <input type="text" id="symptom" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="location">Please Enter Location:</label>
+              <input type="text" placeholder="(longtitude,altitude,radius)" id="location" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="result">Please Enter Search Results:</label>
+              <input type="number"  id="result" class="form-control">
+            </div>
+            <div class="form-group">
+              <button type="submit" name="button" class="btn btn-lg btn-info">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <img src="http://doctors.luzonmedicalcenter.com/wp-content/uploads/2017/06/find-your-doctor.png" alt="doctor">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <ul id="results">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container" id="foot">
+      <b><hr class="my-4"></b>
+      <p align="center">&#169; 2018 <a href="/" >Doctor's App</a>, by Justin Roller.</p>
+    </div>
+  </footer>
+</html>

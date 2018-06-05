@@ -1,0 +1,11 @@
+.col-6  {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+#warning {
+  font-weight: bold;
+  font-style: oblique;
+  color: red;
+  font-size: 50px;
+}
